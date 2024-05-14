@@ -58,10 +58,17 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-2.0.2.tgz#d9fae00a2d5cb40f92cfe64b47ad749fbc38f917"
   integrity sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==
 
-"@moonjot/moon@^0.1.65":
-  version "0.1.65"
-  resolved "https://registry.yarnpkg.com/@moonjot/moon/-/moon-0.1.65.tgz#9fc3487697c78ab9d8e2a5d02fa44dab324042fc"
-  integrity sha512-wv/QlcmAoGFIPHNd/0wMn9WfDNLGIzp6+9PsR5I46LnnBNRX4jyHeNiPMaROr1RT+/8K/qlmz99ChPvmnFZhCA==
+"@moonjot/moon-utils@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@moonjot/moon-utils/-/moon-utils-0.0.7.tgz#86de40c8208f6b3094b71c0634bda4f2c9875a84"
+  integrity sha512-ofX4kyqsgsEAJFEGDeQAkfvgIznLK2HVoQtd1xYedsM2YdWCcO0BrAgGl+RO3ZYvIqYUPxgDNMG5XL0kHsPPkA==
+  dependencies:
+    js-yaml "^4.1.0"
+
+"@moonjot/moon@^0.1.72":
+  version "0.1.72"
+  resolved "https://registry.yarnpkg.com/@moonjot/moon/-/moon-0.1.72.tgz#910cc326d17c6378065176497efb2ecb335a8815"
+  integrity sha512-76I/LfFShpL4lhqVqm7Y6ZjoUFhNSoeB9jK+2PU7GlwNiv2x+L6CgVcW76zmfVeCKv4g361Z3ZFbsSBkPkyKgA==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"

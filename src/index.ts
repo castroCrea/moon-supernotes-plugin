@@ -100,6 +100,7 @@ export default class extends MoonPlugin {
       this.log?.('---------------> ' + this.settings.tags)
 
       const payload = {
+        // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
         name: title || context.source.title || turnDate({ content: '{{DATE}}YYYY-MM-DD HH:mm{{END_DATE}}' }),
         markup: handleConditionContent,
         tags: handleTags

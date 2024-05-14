@@ -1,6 +1,6 @@
 {
   "name": "@moonjot/moon-supernotes-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Moon supernotes plugin for Moon Jot",
   "main": "./dist/index.js",
   "dependencies": {

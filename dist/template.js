@@ -7,6 +7,7 @@ exports.DEFAULT_TEMPLATE = `
 {{IF source.url}}
 # {{IF source.title}}{{source.title}}{{END_IF source.title}}
 {{IF source.url}}{{source.url}}{{END_IF source.url}}
+{{IF source.image}}![]({{source.image}}){{END_IF source.image}}
 {{IF source.description}}{{source.description}}{{END_IF source.description}}
 {{IF source.type === Tweet }}{{source.text}}{{END_IF source.type}}
 {{IF source.timestamp}}

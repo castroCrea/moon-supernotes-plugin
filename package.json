@@ -1,7 +1,7 @@
 {
   "name": "@moonjot/moon-supernotes-plugin",
-  "version": "0.0.0",
-  "description": "Moon sample plugin for Moon",
+  "version": "0.0.1",
+  "description": "Moon supernotes plugin for Moon Jot",
   "main": "./dist/index.js",
   "dependencies": {
     "@moonjot/moon": "^0.1.72",
@@ -20,9 +20,10 @@
     "watch": "tsc --watch"
   },
   "keywords": [
-    "sample",
-    "plugin",
     "moon",
+    "plugin",
+    "supernotes",
+    "moonJot",
     "integration"
   ],
   "license": "MIT",

@@ -47,7 +47,7 @@ class default_1 extends moon_1.MoonPlugin {
         };
         this.integration = {
             callback: ({ context, markdown }) => __awaiter(this, void 0, void 0, function* () {
-                var _a, _b, _c, _d, _e;
+                var _a, _b, _c, _d;
                 const handleDateContent = (0, moon_utils_1.turnDate)({ content: this.settings.template });
                 const searchObj = Object.assign({ content: markdown }, context);
                 const handlePropertiesContent = (_a = (0, moon_utils_1.handleReplacingProperties)({ content: handleDateContent, searchObj })) !== null && _a !== void 0 ? _a : '';
@@ -56,8 +56,8 @@ class default_1 extends moon_1.MoonPlugin {
                 if (handleConditionContent.startsWith('# '))
                     handleConditionContent = handleConditionContent.split('\n').slice(1).join('\n');
                 const handleTags = ((_d = this.settings.tags) !== null && _d !== void 0 ? _d : '').split(',').map(tag => (0, moon_utils_1.searchObject)({ obj: searchObj, path: tag.trim() })).filter(tag => !!tag);
-                (_e = this.log) === null || _e === void 0 ? void 0 : _e.call(this, '---------------> ' + this.settings.tags);
                 const payload = {
+                    // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
                     name: title || context.source.title || (0, moon_utils_1.turnDate)({ content: '{{DATE}}YYYY-MM-DD HH:mm{{END_DATE}}' }),
                     markup: handleConditionContent,
                     tags: handleTags

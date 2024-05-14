@@ -8,6 +8,7 @@ exports.DEFAULT_TEMPLATE = `
 # {{IF source.title}}{{source.title}}{{END_IF source.title}}
 {{IF source.url}}{{source.url}}{{END_IF source.url}}
 {{IF source.description}}{{source.description}}{{END_IF source.description}}
+{{IF source.type === Tweet }}{{source.text}}{{END_IF source.type}}
 {{IF source.timestamp}}
 ## Timestamps
 - [{{source.timestamp.0.timestamp}}]({{source.timestamp.0.url}})

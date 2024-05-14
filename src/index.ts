@@ -97,8 +97,6 @@ export default class extends MoonPlugin {
 
       const handleTags = (this.settings.tags ?? '').split(',').map(tag => searchObject({ obj: searchObj, path: tag.trim() })).filter(tag => !!tag)
 
-      this.log?.('---------------> ' + this.settings.tags)
-
       const payload = {
         // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
         name: title || context.source.title || turnDate({ content: '{{DATE}}YYYY-MM-DD HH:mm{{END_DATE}}' }),

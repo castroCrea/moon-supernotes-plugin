@@ -53,7 +53,7 @@ class default_1 extends moon_1.MoonPlugin {
                 const handlePropertiesContent = (_a = (0, moon_utils_1.handleReplacingProperties)({ content: handleDateContent, searchObj })) !== null && _a !== void 0 ? _a : '';
                 let handleConditionContent = (_c = (_b = (0, moon_utils_1.handleConditions)({ content: handlePropertiesContent, searchObj })) === null || _b === void 0 ? void 0 : _b.trim()) !== null && _c !== void 0 ? _c : '';
                 const title = (0, moon_utils_1.extractTitleFromMarkdown)(handleConditionContent);
-                if (handleConditionContent.startsWith('# '))
+                if (title)
                     handleConditionContent = handleConditionContent.split('\n').slice(1).join('\n');
                 const handleTags = ((_d = this.settings.tags) !== null && _d !== void 0 ? _d : '').split(',').map(tag => (0, moon_utils_1.searchObject)({ obj: searchObj, path: tag.trim() })).filter(tag => !!tag);
                 const payload = {

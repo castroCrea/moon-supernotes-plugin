@@ -6,7 +6,7 @@
 
 Send Note from your OS to [Supernotes](https://supernotes.app/) with your current context. Make it faster and even more super to take note into Supernotes
 
-Get tana token
+Get Supernotes token
 
 Go to settings
 

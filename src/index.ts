@@ -93,7 +93,7 @@ export default class extends MoonPlugin {
 
       const title = extractTitleFromMarkdown(handleConditionContent)
 
-      if (handleConditionContent.startsWith('# ')) handleConditionContent = handleConditionContent.split('\n').slice(1).join('\n')
+      if (title) handleConditionContent = handleConditionContent.split('\n').slice(1).join('\n')
 
       const handleTags = (this.settings.tags ?? '').split(',').map(tag => searchObject({ obj: searchObj, path: tag.trim() })).filter(tag => !!tag)
 
